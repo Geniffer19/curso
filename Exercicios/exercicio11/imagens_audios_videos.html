@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="imagem/favicon.ico" type="image/x-icon">
+  <title>Imagens Audios e Vídeos</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+
+    <picture>
+      <source media="(max-width:750px )" srcset="imagem/Foto-P.png">
+      <source media="(max-width:1050px )" srcset="imagem/Foto-M.png">
+      <img src="imagem/Foto-G.png" alt="imagem expansível">
+    </picture>
+    <br> <br>
+
+    <h1>Utilizando Audio</h1>
+
+    <p>Vamos aprender a reproduzir áudio em HTML5</p>
+    <!--<audio src="midia/Dove Love - Quincas Moreira.mp3" controls autoplay></audio>-->
+
+    <audio preload="metadata" autoplay controls loop>
+      <source src="midia/Dove Love - Quincas Moreira.mp3" type="audio/mpeg"><!--MP3-->
+      <source src="midia/Dove Love - Quincas Moreira.mp3" type="audio/ogg"> 
+      <source src="midia/Dove Love - Quincas Moreira.mp3" type="audio/wav"> <!--Evitar-->
+
+      <p>infelizmente o seu navegador não consegue reproduzir o audio. <a href="midia/Dove Love - Quincas Moreira.mp3" download="Dove Love - Quincas Moreira.mp3" type="audio/mpeg">Clique aqui para baixar o arquivo MP3</a></p>
+    </audio>
+
+    <br> <br> <br>
+
+    <h1>Reproduzindo vídeos em HTML5</h1>
+
+   <!-- <video src="midia/Marília Mendonça - Te Amo Demais - Decretos Reais.mp4" controls width="500px"></video>-->
+
+    <video width="500px" poster="imagem de capa do video (opcional)" controls >
+      <source src="midia/Marília Mendonça - Te Amo Demais - Decretos Reais.mp4" type="video/mp4">
+      <source src="midia/Marília Mendonça - Te Amo Demais - Decretos Reais.mp4" type="video/webm">
+      <source src="midia/Marília Mendonça - Te Amo Demais - Decretos Reais.mp4" type="video/ogg">
+
+      <p>Seu navegador não consegue reproduzir o vídeo</p>
+    </video>
+
+    <h1>Adicionando videos atraves de hospedagem</h1>
+                      <!--Youtube-->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/3hng-hmSv2Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <!--Vimeo-->
+
+    <h1>Adicionando videos do --Vimeo--</h1>
+
+
+</body>
+</html>

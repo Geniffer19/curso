@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+  font-family: 'Android';
+  src: url('../exercicio20_desafio02/fontes/idroid.otf') format('opentype');
+}
+
+:root{
+  --cor01: #89cda5;
+  --cor02: #5cbe7d;
+  --cor03: #1a5a37;
+
+  --font-principal: Arial, Verdana, Helvetica, sans_serif ;
+  --font-destaque: 'Bebas Nue', cursive;
+  --font-android: 'Android', cursive;
+
+  --box-shadow-padrao-texto: 2px 2px 5px rgba(0, 0, 0, 0.400);
+  --simbolo-link-externo: "\00a0\1F517";
+
+}
+
+*{
+  font-family: var(--font-principal);
+  margin: 0px;
+  padding: 0px;
+}
+
+body{
+  padding: 1px;
+  margin: 0px;
+  background: var(--cor01);
+}
+
+/*Palavras grifadas*/
+
+strong{
+  color: var(--cor03);
+  font-weight: bold;
+  text-shadow: var(--box-shadow-padrao-texto);
+}
+
+header{
+  height: 110px;
+  margin: 0px;
+  padding: 10px;
+  background-image: linear-gradient(bottom, var(cor2), var(--cor03));
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.400);
+}
+
+header h1 {
+  color: white;
+  font-size: 32px;
+  font-family: var(--font-destaque);
+  padding: 0px;
+  text-align: center;
+  text-shadow: var(--box-shadow-padrao-texto);
+}
+
+header p {
+  color: white;
+  font-size: 16px;
+  padding: 0px;
+  padding-top: 20px;
+  text-align: center;
+  text-shadow: var(--box-shadow-padrao-texto);
+}
+
+nav{
+  background-color: var(--cor03);
+  padding: 10px;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.400);
+}
+
+nav > a{
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition-duration: 1s;
+}
+
+nav > a:link, nav > a:visited {
+  color: white;
+}
+
+nav > a:hover {
+  background-color: var(--cor02);
+}
+
+main {
+  min-width: 300px;
+  max-width: 1000px;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+main p {
+  color: black;
+  text-align: justify;
+  text-indent: 32px;
+  line-height: 32px;
+  padding-bottom: 20px;
+}
+
+main a {
+  text-decoration: none;
+  color: var(--cor03);
+  font-weight: bold;
+  padding: 2px;
+}
+
+main a::after {
+  content: var(--simbolo-link-externo);
+}
+
+main a:hover {
+  color: white;
+  background-color: var(--cor03);
+  padding: 2px;
+}
+
+article{
+  background-color: white;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.400);
+  border-radius: 0px 0px 5px 5px;
+  padding: 20px;
+  padding-bottom: 10px;
+}
+
+article h1{
+  color: var(--cor03);
+
+  font-size: 32px;
+  text-align: center;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.400);
+
+  font-family: var(--font-android);
+  padding: 20px;
+  margin: 0px;
+}
+
+h2{
+  color: var(--cor03);
+  background-image: linear-gradient(to right, var(--cor01), transparent);
+
+  font-family: var(--font-android);
+  text-shadow: var(--box-shadow-padrao-texto);
+
+  border-radius: 10px 0px 0px 10px;
+
+  padding: 2px;
+  padding-left: 10px;
+
+  margin: 20px;
+  margin-left: 0px;
+}
+
+img {
+  width: 100%;
+}
+
+.pequena{
+  display: block;
+  width: 200px;
+  margin: auto;
+}
+
+.boxVideo{
+  position: relative;
+  background-color: var(--cor03);
+
+  padding-bottom: 56.25%;
+  padding-top: 25px;
+  margin: 0px;
+}
+
+.boxVideo iframe {
+  position: absolute;
+  top: 2.5%;
+  left: 5%;
+  width: 90%;
+  height: 95%;
+}
+
+aside {
+  background-color: #c5ebd6;
+  border-radius: 0px 0px 5px 5px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.400);
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+aside h3 {
+  border-radius: 5px 5px 0px 0px;
+  background-color: #2fa866;
+  color: white;
+  font-size: 16px;
+  padding: 10px;
+  margin: -10px -10px 20px -10px;
+}
+
+aside p {
+  text-align: justify;
+  text-indent: 16px;
+}
+
+aside > ul {
+  list-style-type: '\2714\00a0\00a0';
+  list-style-position: inside;
+  columns: 2;
+  padding: 30px;
+}
+
+footer > p {
+  background-color: var(--cor03);
+  color: white;
+  text-align: center;
+  font-size: 14px;
+  padding: 5px;
+  margin-bottom: 2px;
+}
+
+footer a {
+  font-weight: bold;
+  color: white;
+  text-shadow: var(--box-shadow-padrao-texto);
+  text-decoration: none;
+  padding: 2px;
+}
+
+footer a:hover {
+  color: black;
+  background-color: white;
+  padding: 2px;
+}
+
+footer a::after {
+  content: var(--simbolo-link-externo);
+}
