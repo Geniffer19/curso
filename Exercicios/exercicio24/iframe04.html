@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="imagem/favicon.ico" type="image/x-icon">
+  <title>Uso de Iframes</title>
+  <style>
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    iframe{
+      width: 95vh;
+      height: 400px;
+      border: 2px solid black;
+    }
+  </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore natus dignissimos, cumque, quas eum sapiente fugit impedit tenetur amet eveniet maiores aspernatur tempore illum quia quidem possimus vel numquam nobis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus repudiandae quam dicta iste sunt eveniet itaque vel labore natus quaerat enim alias, earum laborum eum quas nihil eligendi rem pariatur.</p>
+            <!--Como abrir paginas no iframe
+            criando um name na tag iframe e mandar o mesmo nome abrir na tag de link com o target
+            (target="name") ->  (target="frame")
+            -->
+      <ul>
+        <li><a href="paginas-extras/desafio_tabela04.html" target="frame">Primeira página</a></li>
+        <li><a href="paginas-extras/tabela03.html" target="frame">Segunda página</a></li>
+        <li><a href="paginas-extras/tabela06.html" target="frame">Terceira página</a></li>
+      </ul>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis expedita, quia quasi error veniam temporibus. Facere deleniti asperiores perferendis labore, temporibus expedita ipsam inventore doloribus quas quam quidem rem blanditiis? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit inventore aut tempore alias? Quaerat cum, incidunt et distinctio, suscipit unde non obcaecati atque officia labore similique aliquid assumenda delectus provident?</p>
+
+    <iframe name="frame" srcdoc="<h1>Escolha uma das opções acima</h1><img src='imagem/android-chrome-192x192.png'>">
+      <p>Infelizmente seu navegador não é compatível com isso.</p>
+    </iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim perferendis, autem soluta a debitis, consequuntur eius quam inventore placeat natus molestias accusantium obcaecati quaerat quae nihil. Consequuntur quaerat ex enim! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores harum officiis libero nihil, facilis illum sit nisi deserunt incidunt voluptate delectus reprehenderit officia commodi expedita, earum ullam iste facere accusantium.</p>
+
+    
+</body>
+</html>
